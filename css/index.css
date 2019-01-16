@@ -133,7 +133,10 @@ table {
 html,
 body {
   height: 100%;
-  font-family: Rubik;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-size: 24px;
 }
 .flexboxrow {
   display: flex;
@@ -171,13 +174,30 @@ body {
 }
 .section .header-image {
   align-self: center;
-  width: 50%;
+  width: 75%;
 }
 .section .item {
-  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-content: center;
+  padding: 3%;
   border: 1px solid blue;
   margin: 2% 0%;
   width: 33%;
+  overflow: hidden;
+  line-height: 125%;
+}
+.section .item .item-image {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+.section .item .item-image img {
+  width: 75%;
+}
+.section .item .item-text {
+  text-align: center;
 }
 .section .mainmenu {
   align-self: center;
@@ -193,10 +213,11 @@ body {
   list-style-type: none;
   margin: 1%;
   padding: 2%;
-  border: 1px solid red;
 }
 .section .mainmenu nav ul li a {
+  border: 1px solid red;
   text-decoration: none;
+  padding: 15%;
 }
 .section.headerimg {
   background-color: #D3D3D3;
