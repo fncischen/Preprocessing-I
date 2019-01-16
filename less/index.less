@@ -53,14 +53,12 @@ table {
     box-sizing: border-box;
 }
 
-
-
-@borderred = 1px solid red;
-@borderblue = 1px solid blue;
-
 html, body {
     height: 100%;
 }
+
+@borderred: 1px solid red;
+@borderblue: 1px solid blue;
 
 .flexboxrow {
 	display: flex;
@@ -89,26 +87,55 @@ html, body {
 	
 	border: @borderred;
 	margin: 1%;
+
 	.flexboxrow(); 
 
+	.top-header {
+		width: 100%;
+		border: @borderblue; 
+		text-align: center; 
+		padding: 2%;
+	}
+
+	.section.headerimage img {
+		width: 25%;
+	}
+
 	.item {
-		padding: 10%;
+		padding: 15%;
 		border: @borderblue; 
 		margin: 2% 0%;
 	}
 
-	.menu {
-		
-		nav ul {
-			.flexboxrow();
-			list-style-type: none;
-				li {
-					padding: 5px;	
-				}
+	.mainmenu {
+		align-self: center;
+		width: 80%;
 
+		nav {
+
+			ul {
+				.flexboxrow();
+				
+				li {
+					list-style-type: none;
+					margin: 1%;
+					padding: 2%;
+					width: a; 
+				
+					a {
+						text-decoration: none;
+					}
+
+				}
+				
+			}
+			
+			
+			
 		}
 
 	}
-
-
 }
+
+
+
