@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  font-family: Rubik;
 }
 .flexboxrow {
   display: flex;
@@ -147,15 +148,16 @@ body {
   align-content: center;
 }
 .container {
-  max-width: 850px;
+  max-width: 1000px;
+  background-color: #DCDCDC;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   align-content: center;
 }
 .section {
-  border: 1px solid red;
   margin: 1%;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -167,13 +169,15 @@ body {
   text-align: center;
   padding: 2%;
 }
-.section .section.headerimage img {
-  width: 25%;
+.section .header-image {
+  align-self: center;
+  width: 50%;
 }
 .section .item {
-  padding: 15%;
+  padding: 1%;
   border: 1px solid blue;
   margin: 2% 0%;
+  width: 33%;
 }
 .section .mainmenu {
   align-self: center;
@@ -189,8 +193,11 @@ body {
   list-style-type: none;
   margin: 1%;
   padding: 2%;
-  width: a;
+  border: 1px solid red;
 }
 .section .mainmenu nav ul li a {
   text-decoration: none;
+}
+.section.headerimg {
+  background-color: #D3D3D3;
 }
