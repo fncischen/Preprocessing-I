@@ -53,7 +53,62 @@ table {
     box-sizing: border-box;
 }
 
+
+
+@borderred = 1px solid red;
+@borderblue = 1px solid blue;
+
 html, body {
     height: 100%;
 }
 
+.flexboxrow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flexboxcolumn {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto; 
+	align-content: center;
+}
+
+.container {
+	max-width: 850px;
+	.flexboxcolumn();
+	@media (max-width: 500px) 
+	{
+
+	}
+}
+
+.section {
+	
+	border: @borderred;
+	margin: 1%;
+	.flexboxrow(); 
+
+	.item {
+		padding: 10%;
+		border: @borderblue; 
+		margin: 2% 0%;
+	}
+
+	.menu {
+		
+		nav ul {
+			.flexboxrow();
+			list-style-type: none;
+				li {
+					padding: 5px;	
+				}
+
+		}
+
+	}
+
+
+}
