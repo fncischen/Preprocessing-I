@@ -86,9 +86,10 @@ h2 {
 	max-width: 1000px;
 	background-color: @containercolor;
 	.flexboxcolumn();
+
 	@media (max-width: 500px) 
 	{
-
+		max-width: 500px;
 	}
 }
 
@@ -110,6 +111,10 @@ h2 {
 	.header-image {
 		align-self: center;
 		width: 75%;
+		@media (max-width: 500px) 
+		{
+			width: 100%;
+		}
 	}
 
 	.item {
@@ -130,6 +135,10 @@ h2 {
 
 					img	{
 						width: 75%;
+						@media (max-width: 500px) 
+						{
+							width: 100%;
+						}
 					}
 					
 			}
@@ -137,6 +146,11 @@ h2 {
 			.item-text {
 				text-align: center;
 			}
+
+	@media (max-width: 500px) 
+	{
+		width: 100%;
+	}
 
 	}
 
@@ -148,16 +162,26 @@ h2 {
 
 			ul {
 				.flexboxrow();
+				@media (max-width: 500px) 
+				{
+					flex-direction: column;
+					align-items: center;
+					align-content: center;
+				}
 				
 				li {
 					list-style-type: none;
 					margin: 1%;
-					padding: 2%;
-					
-					a {
+					padding: 2%;	
+					border: @borderred;
+					@media (max-width: 500px) 
+					{
+						padding: 0% 100%;
 						border: @borderred;
+					}
+					a {
 						text-decoration: none;
-						padding: 15%;
+						padding: 10px 5%;
 					}
 
 				}

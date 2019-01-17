@@ -158,6 +158,11 @@ h2 {
   margin: 0 auto;
   align-content: center;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
 .section {
   margin: 1%;
   overflow: hidden;
@@ -175,6 +180,11 @@ h2 {
 .section .header-image {
   align-self: center;
   width: 75%;
+}
+@media (max-width: 500px) {
+  .section .header-image {
+    width: 100%;
+  }
 }
 .section .item {
   display: flex;
@@ -196,8 +206,18 @@ h2 {
 .section .item .item-image img {
   width: 75%;
 }
+@media (max-width: 500px) {
+  .section .item .item-image img {
+    width: 100%;
+  }
+}
 .section .item .item-text {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .section .item {
+    width: 100%;
+  }
 }
 .section .mainmenu {
   align-self: center;
@@ -209,15 +229,28 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .section .mainmenu nav ul {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}
 .section .mainmenu nav ul li {
   list-style-type: none;
   margin: 1%;
   padding: 2%;
+  border: 1px solid red;
+}
+@media (max-width: 500px) {
+  .section .mainmenu nav ul li {
+    padding: 0% 100%;
+    border: 1px solid red;
+  }
 }
 .section .mainmenu nav ul li a {
-  border: 1px solid red;
   text-decoration: none;
-  padding: 15%;
+  padding: 10px 5%;
 }
 .section.headerimg {
   background-color: #D3D3D3;
